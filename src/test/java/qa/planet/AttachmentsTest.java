@@ -20,7 +20,6 @@ public class AttachmentsTest {
             attachment("Source", webdriver().driver().source());
         });
     }
-
     @Test
     public void testAnnotatedAttachments() {
         SelenideLogger.addListener("allure", new AllureSelenide());
