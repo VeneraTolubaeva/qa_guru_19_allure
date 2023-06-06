@@ -14,7 +14,6 @@ public class LabelsTest {
     @Link(value = "Testing", url = "https://testing.github.com")
     @DisplayName("Создание Issue для авторизованного пользователя")
     public void testStaticLabels() {
-
     }
 
     @Test

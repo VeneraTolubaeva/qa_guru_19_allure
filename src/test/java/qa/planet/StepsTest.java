@@ -54,6 +54,5 @@ public class StepsTest {
         steps.clickOnRepositoryLink(REPOSITORY);
         steps.openIssuesTab();
         steps.shouldSeeIssueWithNumber(ISSUE);
-
     }
 }
