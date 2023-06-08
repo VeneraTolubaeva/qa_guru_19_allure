@@ -14,13 +14,15 @@
 *.rar
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+*.idea
 *.iws
 *.iml
 *.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+gradle
+gradlew.bat
+settings.gradle
+qa_guru_19_allure
+.github
