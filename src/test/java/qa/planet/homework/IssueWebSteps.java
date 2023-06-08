@@ -1,5 +1,6 @@
 package qa.planet.homework;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
@@ -7,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
@@ -30,9 +32,14 @@ public class IssueWebSteps {
         $(linkText(repo)).click();
     }
 
-    @Step("Проверка названия 'Issues' в репозитории")
-    public void checkingIssueTitle() {
-        $("#repository-container-header").shouldHave(text("Issues"));
+    @Step("Кликаем по вкладке Issue")
+    public void clickIssuesTab() {
+        $("#issues-tab").click();
+    }
+
+    @Step("Проверяем наличие Issue с названием {issue}")
+    public void checkingIssueTitle(String issue) {
+        $(withText(issue)).should(Condition.exist);
     }
 
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")

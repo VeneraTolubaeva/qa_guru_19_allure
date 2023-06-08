@@ -12,6 +12,8 @@ public class IssueWebStepsTest {
     public static final String PROFILE = "VeneraTolubaeva/";
     public static final String REPOSITORY = "VeneraTolubaeva/qa_guru_19_allure";
 
+    public static final String ISSUE = "issue_to_test_allure_repor";
+
     @Test
     @DisplayName("Шаги с аннотацией @Step")
     public void testAnnotatedStep() {
@@ -20,7 +22,8 @@ public class IssueWebStepsTest {
         steps.openMainPage();
         steps.searchProfile(PROFILE);
         steps.clickOnRepositoryLink(REPOSITORY);
-        steps.checkingIssueTitle();
+        steps.clickIssuesTab();
+        steps.checkingIssueTitle(ISSUE);
         steps.takeScreenshot();
     }
 }
