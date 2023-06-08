@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static io.qameta.allure.Allure.attachment;
 import static io.qameta.allure.Allure.step;
-
 public class AttachmentsTest {
 
     @Test

@@ -5,8 +5,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import qa.planet.homework.IssueWebSteps;
-
 public class IssueWebStepsTest {
 
     public static final String PROFILE = "VeneraTolubaeva/";

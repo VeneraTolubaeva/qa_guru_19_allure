@@ -12,10 +12,8 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
 public class StepsTest {
-
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE = 80;
-
     @Test
     public void testLambdaStep() {
         SelenideLogger.addListener("allure", new AllureSelenide());

@@ -6,7 +6,6 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
@@ -18,7 +17,6 @@ public class WebSteps {
     public void openMainPage(){
         open("https://github.com");
     }
-
     @Step("Ищем репозиторий {repo}")
     public void searchForRepository(String repo) {
         $(".header-search-input").click();
