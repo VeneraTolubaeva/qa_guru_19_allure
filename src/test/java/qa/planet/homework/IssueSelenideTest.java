@@ -27,7 +27,7 @@ public class IssueSelenideTest {
 
             $(linkText("VeneraTolubaeva/qa_guru_19_allure")).click();
             $("#issues-tab").click();
-            $(withText("TEST ISSUE")).should(Condition.exist);
+            $(withText("issue_to_test_allure_repor")).should(Condition.exist);
         }
 }
 
